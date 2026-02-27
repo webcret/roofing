@@ -1,0 +1,143 @@
+:root {
+  --bg: #f8f7f4;
+  --text: #1e1d1a;
+  --muted: #555147;
+  --line: #dfdad0;
+  --accent: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top right, #fff8e9 0%, var(--bg) 50%);
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.wrap {
+  width: min(1060px, 92vw);
+  margin: 0 auto;
+}
+
+.topbar {
+  border-bottom: 1px solid var(--line);
+  background: #f8f7f4ee;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(4px);
+}
+
+.topbar .wrap {
+  padding: 0.9rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.intro {
+  padding: 5rem 0 2.4rem;
+}
+
+.tag {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  color: var(--accent);
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  margin: 0.7rem 0 0;
+  max-width: 16ch;
+  font-size: clamp(2.1rem, 6.2vw, 4rem);
+  line-height: 1.08;
+}
+
+.cases {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cases article {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: #fffdf8;
+  border-radius: 0.7rem;
+}
+
+.meta {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cases h2 {
+  margin: 0.5rem 0;
+}
+
+.cases p {
+  color: var(--muted);
+}
+
+.services {
+  margin: 2.1rem 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.services h2 {
+  margin-bottom: 0.6rem;
+}
+
+.services ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--muted);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
